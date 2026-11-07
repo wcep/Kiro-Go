@@ -8,6 +8,8 @@ Chuyển tài khoản Kiro thành dịch vụ API tương thích OpenAI / Anthro
 
 [English](README.md) | [中文](README_CN.md) | [Tiếng Việt](README_VI.md)
 
+**Đây là bản fork từ [Quorinex/Kiro-Go](https://github.com/Quorinex/Kiro-Go).**
+
 Nếu dự án này hữu ích với bạn, một Star sẽ rất có ý nghĩa.
 
 ## Tính năng
@@ -24,7 +26,7 @@ Nếu dự án này hữu ích với bạn, một Star sẽ rất có ý nghĩa.
 ### Docker Compose (Khuyến nghị)
 
 ```bash
-git clone https://github.com/Quorinex/Kiro-Go.git
+git clone https://github.com/wcep/Kiro-Go.git
 cd Kiro-Go
 mkdir -p data
 docker-compose up -d
@@ -39,13 +41,13 @@ docker run -d \
   -e ADMIN_PASSWORD=your_secure_password \
   -v /path/to/data:/app/data \
   --restart unless-stopped \
-  ghcr.io/quorinex/kiro-go:latest
+  ghcr.io/wcep/kiro-go:latest
 ```
 
 ### Build từ mã nguồn
 
 ```bash
-git clone https://github.com/Quorinex/Kiro-Go.git
+git clone https://github.com/wcep/Kiro-Go.git
 cd Kiro-Go
 go build -o kiro-go .
 ./kiro-go

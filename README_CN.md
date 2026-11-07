@@ -8,6 +8,8 @@
 
 [English](README.md) | 中文 | [Tiếng Việt](README_VI.md)
 
+**这是 [Quorinex/Kiro-Go](https://github.com/Quorinex/Kiro-Go) 的 fork 仓库。**
+
 如果这个项目帮到了你，欢迎点个 Star 支持一下。
 
 ## 功能特性
@@ -24,7 +26,7 @@
 ### Docker Compose（推荐）
 
 ```bash
-git clone https://github.com/Quorinex/Kiro-Go.git
+git clone https://github.com/wcep/Kiro-Go.git
 cd Kiro-Go
 mkdir -p data
 docker-compose up -d
@@ -39,13 +41,13 @@ docker run -d \
   -e ADMIN_PASSWORD=your_secure_password \
   -v /path/to/data:/app/data \
   --restart unless-stopped \
-  ghcr.io/quorinex/kiro-go:latest
+  ghcr.io/wcep/kiro-go:latest
 ```
 
 ### 源码编译
 
 ```bash
-git clone https://github.com/Quorinex/Kiro-Go.git
+git clone https://github.com/wcep/Kiro-Go.git
 cd Kiro-Go
 go build -o kiro-go .
 ./kiro-go
